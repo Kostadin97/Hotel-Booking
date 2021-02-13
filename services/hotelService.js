@@ -1,5 +1,5 @@
-const Hotel = require('../Model/Hotel');
-const User = require('../Model/User');
+const Hotel = require('../models/Hotel');
+const User = require('../models/User');
 
 async function getAll() {
     let products = await Hotel.find({}).lean();
